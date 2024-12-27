@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script>
+
+
+        // Burası yorum satırıdır
+
+        /*
+
+           Javascript fonksiyonel bir dildir.. Javascript'te degişkenlerin tipleri hep var veya let olarak yazılır... Dynamically typed bir dildir...
+
+           Javascript fonksiyonlarınızın geriye dönüs tipleri belirtilemez...
+
+           Javascript'te ifadelerinizin sonuna noktalı virgül koymak zorunda degilsiniz; fakat koydugunuz takdirde daha hızlı render edilmesini saglarsınız...
+
+           Javascript'te metinsel ifadeler dilerseniz tek , dilerseniz cift tırnak arasına yazılabilir
+
+
+        */
+
+
+        function Selamla() {
+            alert("Hello World");
+        }
+
+
+        function Sor() {
+            //confirm fonksiyonu size yes ve no buttonu olan bir mesaj kutusu cıkartır...Ve deger döndüren bir fonksiyondur...
+
+            var result = confirm("Silmek istediginizden emin misiniz?");
+
+            if (result) {
+                alert("Silme onaylandı");
+            }
+            else {
+                alert("İşlem iptal edildi");
+            }
+
+
+        }
+
+        //let ile olusturulmus olan degişkenler sadece tanımlandıkları alanda calısır (local alanda tanımlandıysa sadece o alanda calısabilir)
+
+        //var ile olusturulmus olan deigişkenler her düzleme ulasabilir... Sadece degerleri atanmamıssa(sonradan tanımlanmıslarsa) undefined olarak gecerler....
+
+        //var veya let kullanmadan degişken olusturabilirsiniz...Bu şekilde degişken olusturusanız local alanda olsa bile var gibi davranır...Lakin eger bu şekilde bir tanımlama yaparsanız ve degerini atamazsanız o zaman da tanımlanmamıs gibi davranacaklardır...
+
+
+
+        function Deneme() {
+
+
+            a = 2;
+
+
+            if (a == 2) {
+                let b = 2;
+
+
+
+
+            }
+
+
+
+
+            alert(b);
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <input type="button" value="Tıkla" onclick="Selamla()" />
+
+
+    <hr />
+
+    <button onclick="Sor()">Sor</button>
+
+    <hr />
+
+    <button onclick="Deneme()">Simulasyon</button>
+
+
+
+</body>
+</html>

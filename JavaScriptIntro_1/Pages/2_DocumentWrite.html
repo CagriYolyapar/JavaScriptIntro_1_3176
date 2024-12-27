@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        //Javascript ile bir sayfanın icerigini komple degiştirebilirsiniz
+
+        //document.write() fonksiyonu kullanılarak bir sayfadaki tasarım kodları tamamen degiştirilebilir...
+
+
+        //IcerigiDegistir'i icerigi tekrar degiştirme görevine sahip bir baska button ekleyin...Ve oraya tıklayınca Isim soyisim yas baslıklı , İsminiz , soyminiz ve yasınız bilgilerine sahip bir tablo gelsin...
+
+        function IcerigiDegistir() {
+            document.write("<h1> Burası degiştirilmiş bir dökümantasyondur </h1> <p> Burası yeni bir paragraftır </p> <hr/>  <ul> <li> Encapsulation </li> <li> Inheritance </li> <li>  Polymorphism</li> <li> Abstraction </li> </ul> <hr/> <button onclick='YeniIcerik()'> Yeniden degiştir </button>");
+
+
+
+          
+        }
+
+
+        function YeniIcerik() {
+            document.open();
+            document.write("<table> <thead> <tr>  <th> Isim </th> <th> Soyisim </th> <th>Yas</th>  </tr> </thead> <tbody> <tr> <td> Cagrı</td> <td>Yolyapar </td> <td> 26 </td>  </tr> </tbody> </table>");
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+
+    <p>
+        Bu orijinal tasarım!
+    </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Isim</th>
+                <th>Soyisim</th>
+                <th>Sirket</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sedat</td>
+                <td>Edlatun</td>
+                <td>Bilge Adam</td>
+            </tr>
+            <tr>
+                <td>Hakan</td>
+                <td>Akınsu</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>Kaan</td>
+                <td>Cakmak</td>
+                <td>Nvidia</td>
+            </tr>
+            <tr>
+                <td>Hilal</td>
+                <td>Canpolat</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
+                <td>Akif</td>
+                <td>Degirmenci</td>
+                <td>Nike</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr />
+
+    <button onclick="IcerigiDegistir()"> Degistir</button>
+
+</body>
+</html>

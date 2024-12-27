@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script>
+
+        var doluMu = true;
+
+        function CopBosalt() {
+
+            let sonuc = confirm("Cop kutusunu bosaltmak istediginize emin misiniz?");
+
+            if (sonuc) {
+                copKutusu.src = "../Pictures/Empty.png";
+                copKutusu.title = "Bos cop kutusu";
+                doluMu = false;
+            }
+
+
+
+        }
+
+        function CopAt() {
+            let sonuc = confirm("Cop atmak istediginize emin misiniz?");
+            if (sonuc) {
+                copKutusu.src = "../Pictures/Full.png";
+                copKutusu.title = "Cop kutusunu bosaltmak icin tıklayınız";
+                doluMu = true;
+            }
+        }
+
+
+        function ExecuteEt() {
+            if (doluMu) {
+                CopBosalt();
+            }
+            else {
+                CopAt();
+            }
+        }
+
+
+    </script>
+
+
+
+</head>
+
+
+<!--
+    
+Cop kutusuna tıkladıgınızda cöp kutusu doluysa cop kutusunu bosaltmak istediginize emin misiniz diye bir soru sorulsun. Eger evet derseniz cöp kutusu bosaltılsın...Cop kutusu bossa da üzerine tıkladıgınızda cop atmak istediginize emin misiniz diye bir soru cıksın...Evet denirse cöp kutusu dolsun...
+
+-->
+
+
+<body>
+    <h1>Javascript ile Attribute degiştirmek</h1>
+
+    <img src="../Pictures/Full.png" id="copKutusu" title="Cop Kutusunu bosaltmak icin tıklayınız " onclick="ExecuteEt()" />
+</body>
+</html>
